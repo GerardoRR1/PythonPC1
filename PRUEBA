@@ -1,0 +1,15 @@
+#1. Ingrese los números
+num_prim  = float(input("Introduce el primer número: "))
+seg_prim  = float(input("Introduce el segundo número: "))
+
+#2. Cálculos
+suma_nums = num_prim+seg_prim
+rest_nums = num_prim-seg_prim
+mult_nums = num_prim*seg_prim
+
+if suma_nums and rest_nums and mult_nums == float:
+    print("""El resultado de la suma es {}, el resultado de la resta es {} y el resultado de la multiplicación 
+es {}""".format(suma_nums,rest_nums,mult_nums))
+
+else:
+    print("Ingrese un valor válido")

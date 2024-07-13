@@ -1,19 +1,27 @@
-#Problema 7:
-#Realiza un programa que lea dos números por teclado y permite elegir entre 3 opciones en un menú:
-#- Mostrar una suma de los dos números
-#- Mostrar una resta de los dos números (el primero menos el segundo)
-#- Mostrar una multiplicación de los dos números
-#- En caso de introducir una opción inválida, el programa informará de que no es correcta.
+#Problema 7
 
 #1. Ingrese los números
-num_prim  = float(input("Introduce el primer número: "))
-num_seg  = float(input("Introduce el segundo número: "))
+numero1=float(input("Ingresar primer numero: "))
+numero2=float(input("Ingresar segundo numero: "))
 
-#2. Cálculos
-suma_nums = num_prim+num_seg
-rest_nums = num_prim-num_seg
-mult_nums = num_prim*num_seg
+#2. Opciones de operaciones 
+print("""Elegir entre las 3 opciones
+1.Suma de 2 numeros
+2.Resta de 2 numeros (primero menos segundo)  
+3.Multiplicacion de los 2 numeros""")
 
-if suma_nums and rest_nums and mult_nums == float:
-print("""El resultado de la suma es {}, el resultado de la resta es {} y el resultado de la multiplicación 
-es {}""".format(suma_nums,rest_nums,mult_nums))
+#3. Resultado
+opcion_elegida=float(input("Ingrese su opcion elegida: "))
+if opcion_elegida== 1 :
+        resultado=numero1 + numero2
+        print("El resultado es {}".format(resultado))
+
+elif opcion_elegida== 2 :
+        resultado=numero1 - numero2
+        print("El resultado es {}".format(resultado))
+    
+elif opcion_elegida== 3 :
+        resultado=numero1 * numero2
+        print("El resultado es {}".format(resultado))
+else :
+    print("Opcion inválida")
